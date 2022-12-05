@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Турист-Pro</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="wrapper">
+            <div class="topline__content">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="#about">О
+                                        компании</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page"
+                                        href="#contact">Контакты</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                                <button class="btn btn-light text-white" type="submit"><img src="img/search--v4.png"
+                                        alt="" width="30px"></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="header2">
+        <div class="wrapper">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#stock">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#booking">Управление бронированием</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reviews">Отзывы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#"><img src="img/238610_1440x538.jpg" class="d-block" alt loading="lazy"></a>
+
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="img/243351_1440x538.png" class="d-block" alt loading="lazy"></a>
+
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="img/240278_1440x538.jpg" class="d-block" alt loading="lazy"></a>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="logo"></div>
+
+
+    <section class="form_turist">
+        <h2 class="advance" id="booking">ВЫБРАТЬ ПУТЕШЕСТВИЕ!</h2>
+        <form class="grid3">
+
+            <div class="col">
+                <label for="validationDefault01" class="form-label">Начало путешествия</label>
+                <input type="date" class="form-control" id="validationDefault01" value="" required>
+            </div>
+            <div class="col">
+                <label for="validationDefault02" class="form-label">Конец путешествия</label>
+                <input type="date" class="form-control" id="validationDefault02" value="" required>
+            </div>
+
+            <div class="col"><label for="validationDefault02" class="form-label">Город</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Выберите город</option>
+                    <option value="1">Москва</option>
+                    <option value="2">Санкт-Петербург</option>
+                    <option value="4">Ярославль</option>
+                    <option value="5">Тула</option>
+                    <option value="6">Сочи</option>
+                    <option value="7">Ростов Великий</option>
+                    <option value="8">Дмитров</option>
+                    <option value="9">Севастополь</option>
+                    <option value="10">Тверь</option>
+                    <option value="11">Екатеринбург</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <label for="validationDefault04" class="form-label">Тип путешествия</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Выберите...</option>
+                    <option value="12">Вело</option>
+                    <option value="13">Водные</option>
+                    <option value="14">Восхождения</option>
+                    <option value="15">Горные лыжи/сноуборд</option>
+                    <option value="16">Горный лагерь</option>
+                    <option value="17">Зимний</option>
+                    <option value="18">На выходные</option>
+                    <option value="19">Пешие</option>
+                    <option value="20">Разведки</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="validationDefault04" class="form-label">Сложность</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Выберите...</option>
+                    <option value="21">Для всех</option>
+                    <option value="22">Легкий</option>
+                    <option value="23">Средняя сложность</option>
+                    <option value="24">Сложный</option>
+                    <option value="25">Сложный/требуется подготовка</option>
+                </select>
+            </div>
+
+        </form>
+        <div class="col1">
+            <button class="btn btn-primary" type="submit"> <a href="search.html">Далее</a> </button>
+        </div>
+    </section>
+    <section class="infographics">
+        <div class="wrapper2">
+            <h2 class="question">АЛГОРИТМ БРОНИРОВАНИЯ</h2>
+            <hr>
+
+            <div class="grid5">
+                <div class="block">
+                    <h4 class="numb">1</h4>
+                    <p class="inside">Укажите начало и конец путешествия</p>
+                </div>
+                <div class="block">
+                    <h4 class="numb">2</h4>
+                    <p class="inside">Выберите город</p>
+                </div>
+                <div class="block">
+                    <h4 class="numb">3</h4>
+                    <p class="inside">Выберите тип путешествия и уровнь подготовки</p>
+                </div>
+                <div class="block">
+                    <h4 class="numb">4</h4>
+                    <p class="inside">Нажмите кнопку далее</p>
+                </div>
+                <div class="block">
+                    <h4 class="numb">5</h4>
+                    <p class="inside">Выберите из списка удобный для вас маршрут</p>
+                </div>
+                <div class="block">
+                    <h4 class="numb">6</h4>
+                    <p class="inside">Нажмите кнопку далее</p>
+                </div>
+                <div class="block">
+                    <h4 class="numb">7</h4>
+                    <p class="inside">Выберите несколько зон для посещения</p>
+                </div>
+                <div class="block">
+                    <h4 class="numb">8</h4>
+                    <p class="inside">Нажмите кнопку далее</p>
+                </div>
+                <div class="block">
+                    <h4 class="numb">9</h4>
+                    <p class="inside">Ознакомтесь с конечными результатами вашего выбора</p>
+                </div>
+            </div>
+            <div class="block10">
+                <h4 class="numb">10</h4>
+                <p class="inside">Готово, ваша заявка принята!</p>
+            </div>
+
+        </div>
+        <div class="arrow1"><img src="img/Little_Doctor_Palvinka_el (207).png" alt="" height="240"></div>
+        <div class="arrow2"><img src="img/Little_Doctor_Palvinka_el (207).png" alt="" height="240"></div>
+        <div class="arrow3"><img src="img/Little_Doctor_Palvinka_el (206).png" alt="" height="170"></div>
+
+
+
+    </section>
+
+
+
+    <div class="wrapper2">
+        <section class="info">
+
+            <h2 class="question2" id="about">О КОМПАНИИ</h2>
+            <hr>
+            <h3 class="slogan">Исполнить мечты просто!</h3>
+            <div class="grid">
+                <p>«Турист-Pro» — это проводник в походы и путешествия с 2019<br> года с опытными инструкторами из
+                    Санкт-Петербурга,
+                    Москвы <br> и других городов. Каждый год инструкторы, которых вы <br> можете видеть на нашем сайте,
+                    отправляются в походы и активные туры по самым разнообразным маршрутам. И к<br> ним всегда можно
+                    присоединиться, <br> не зависимо от того, в каком вы городе!</p>
+                <p>Вы можете выбрать из большого количества походов с <br>открытым набором в группы — присоединиться
+                    можно
+                    как одному участнику,
+                    <br> так и с друзьями. А для организованных групп от 10 человек<br> мы готовы подобрать поход по
+                    любому из
+                    маршрутов на <br>нашем сайте в отдельные удобные сроки.
+                </p>
+                <p>Инструкторы на нашем сайте — это опытные путешественники,
+                    которые прошли множество походов и специальную подготовку. Это увлеченные и творческие люди,
+                    для которых походы являются любимым делом и важной частью жизни. Они поделятся опытом и помогут
+                    организовать
+                    в группе комфортную психологическую обстановку.</p>
+            </div>
+            <h4 class="purpose"> Цели компании</h4>
+
+            <div class="purpose_block">
+                <p class="one">Предоставление объективной<br> информации обо всех туроператорах,<br> которая
+                    основывается на
+                    отзывах клиентов;</p>
+                <p class="two">Сделать все возможное, <br> чтобы отдых клиентов был одним <br> из самых ярких и
+                    запоминающихся
+                    событий <br> в жизни;</p>
+                <p class="three">Завоевание психологического <br> имиджа и позиции у потребителей;</p>
+                <p class="four">Организация эффективного управления, <br> и повышения качества услуг;</p>
+                <p class="five">Стремится в своей работе к <br> постоянному совершенствованию, <br> воплощать новые
+                    идеи;</p>
+                <p class="six">Обеспечение высокого уровня <br> обслуживания населения на основе <br>
+                    дифференцированного подхода
+                    к разным <br> группам клиентов.</p>
+            </div>
+            <h4 class="purpose2" id="reviews"> Отзывы</h4>
+
+            <div class="grid2">
+                <div class="container">
+                    <img src="img/2.jpg" alt="avatar" width="100" height="100">
+                    <p><span>Марина Белова</span> г. Москва</p>
+                    <p>Ходил в этот поход 25-27.11.2022. Не первый раз ходил с Ромой и Катей, поэтому знал, что
+                        "Куропятниковы - это бренд" и заранее был уверен, что в походе будет сло...</p>
+                </div>
+                <div class="container">
+                    <img src="img/3.jpg" alt="avatar" width="100" height="100">
+                    <p><span>Ирина Завывалова</span> г. Екатеринбург</p>
+                    <p>Отличный вечер игр - это прямо то что нужно нашими долгими осенними и зимними вечерами. Были с
+                        подругой - нам очень понравилось...</p>
+                </div>
+                <div class="container">
+                    <img src="img/4.jpg" alt="avatar" width="100" height="100">
+                    <p><span>Игорь Остапенко</span> г. Тверь</p>
+                    <p>Отправиться в заснеженное место, да ещё в купольный дом с видом на ладожское озеро, стоит
+                        потраченных выходных! После встречи у жд перрона, мы направились к тропе...</p>
+                </div>
+                <div class="container">
+                    <img src="img/5.jpg" alt="avatar" width="100" height="100">
+                    <p><span>Инга Исаева</span> г. Ярославль</p>
+                    <p>Второй поход в жизни, первый 12-часовой. Всё очень понравилось. По таймингу путь с привалами,
+                        экскурсиями в усадьбах и обедом распланирован на 10 из 10. Хотелось б...</p>
+                </div>
+
+            </div>
+            <h2 class="question3" id="stock">АКЦИИ</h2>
+            <hr>
+            <div class="grid4">
+                <div class="block_stock"><img src="img/181760_350x254.jpeg" class="stock_image" alt="">
+                    <h4 class="stock">ЗИМА ЗА ПОЛЯРНЫМ КРУГОМ (ТЕРИБЕРКА)</h4>
+                </div>
+                <div class="block_stock"><img src="img/182925_350x254.jpg" class="stock_image" alt="">
+                    <h4 class="stock">АКТИВНЫЙ ОТДЫХ ЗА ПОЛЯРНЫМ КРУГОМ (ХИБИНЫ С ПРОЖИВАНИЕМ В ГОСТИНИЦЕ)</h4>
+                </div>
+                <div class="block_stock"><img src="img/18991760_350x254.jpeg" class="stock_image" alt="">
+                    <h4 class="stock">ГОРНОЛЫЖНЫЙ ЛАГЕРЬ В АРХЫЗЕ</h4>
+                </div>
+                <div class="block_stock"><img src="img/240626_350x254.jpg" class="stock_image" alt="">
+                    <h4 class="stock">НОВОГОДНИЕ ПРАЗДНИКИ В СЕДЛЕ: ЗИМНИЙ КОННЫЙ ТУР В ГОРАХ КАВКАЗА</h4>
+                </div>
+                <div class="block_stock"><img src="img/241507_350x254.jpg" class="stock_image" alt="">
+                    <h4 class="stock">ПО ТРОПАМ СЕВЕРНОЙ КОЛХИДЫ: НОВОГОДНИЙ ПОХОД В СОЧИНСКИХ ПРЕДГОРЬЯХ</h4>
+                </div>
+                <div class="block_stock"><img src="img/242417_350x254.png" class="stock_image" alt="">
+                    <h4 class="stock">ГОРНЫЙ ЛАГЕРЬ В КАЧИНСКОЙ ДОЛИНЕ (ЗИМНЯЯ ПРОГРАММА)</h4>
+                </div>
+            </div>
+            <div class="grid6">
+                <img src="img/50offtheme.png" alt="" width="150px">
+                <img src="img/50offtheme.png" alt="" width="150px">
+                <img src="img/50offtheme.png" alt="" width="150px">
+                <img src="img/50offtheme.png" alt="" width="150px">
+                <img src="img/50offtheme.png" alt="" width="150px">
+                <img src="img/50offtheme.png" alt="" width="150px">
+            </div>
+            <div class="grid7">
+                <button class="description">Полное описание</button>
+                <button class="description">Полное описание</button>
+                <button class="description">Полное описание</button>
+                <button class="description">Полное описание</button>
+                <button class="description">Полное описание</button>
+                <button class="description">Полное описание</button>
+            </div>
+    </div>
+    </section>
+    <section class="footer">
+        <div class="subscription">
+            <h3 class="stock"> Подписаться на закрытые акции</h3>
+            <p>Введите e-mail</p>
+            <input class="lead-in" name="e-mail" id="">
+            <button class="sub">ПОДПИСАТЬСЯ</button>
+        </div>
+        <div class="contact">
+            <h3 class="text" id="contact">КОНТАКТЫ</h3>
+            <h4 class="phone"> Телефон “8 (800) 555-33-10”</h4>
+        </div>
+        <div class="link">
+            <h3 class="nawi">Навигация по сайту</h3>
+            <li class="link_nawi"><a class="navigate" aria-current="page" href="#about">О компании</a></li>
+            <li class="link_nawi"><a class="navigate" href="#stock">Акции</a></li>
+            <li class="link_nawi"><a class="navigate" href="#booking">Управление бронированием</a></li>
+            <li class="link_nawi"><a class="navigate" href="#reviews">Отзывы</a></li>
+        </div>
+
+
+    </section>
+
+
+    <script src="js/app"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
